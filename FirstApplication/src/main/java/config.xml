@@ -12,6 +12,9 @@
  http://www.springframework.org/schema/tx 
  http://www.springframework.org/schema/tx/spring-tx.xsd ">
 
+ 
+              <!-- Using Value as element -->
+ 
  <bean class="com.spring.FirstApplication.Student" name="student">
        <property name="studentId">
             <value>1</value>
