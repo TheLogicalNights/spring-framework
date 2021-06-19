@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xmlns:tx="http://www.springframework.org/schema/tx"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd 
+ http://www.springframework.org/schema/context 
+ http://www.springframework.org/schema/context/spring-context.xsd 
+ http://www.springframework.org/schema/tx 
+ http://www.springframework.org/schema/tx/spring-tx.xsd ">
+ 
+    <!-- Injecting List -->
+    <bean class="com.spring.ListInjection.Employee" name="employee">
+        <property name="empId" value="1"></property>
+        <property name="empPhoneNo">
+             <list>
+                <value>8446736267</value>
+                <value>9822206761</value>
+                <value>7276111120</value>
+             </list>
+        </property>
+        <property name="empAddress">
+             <list>
+                <value>Pune</value>
+                <value>Satara</value>
+                <value>Kolhapur</value>
+             </list>
+        </property>
+    </bean>
+ 
+ </beans>
