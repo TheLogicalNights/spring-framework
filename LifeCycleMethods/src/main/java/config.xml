@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:c="http://www.springframework.org/schema/c"
+ xmlns:tx="http://www.springframework.org/schema/tx"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd 
+ http://www.springframework.org/schema/context 
+ http://www.springframework.org/schema/context/spring-context.xsd 
+ http://www.springframework.org/schema/tx 
+ http://www.springframework.org/schema/tx/spring-tx.xsd ">
+
+ 	<!-- Injection of bean lifecycle methods using XML -->
+ 	<bean class="com.spring.LifeCycleMethods.Person" name="person" init-method="init" destroy-method="destroy">
+ 		<constructor-arg value="101" type="int" />
+ 		<constructor-arg value="Swapnil Ramesh Adhav" type="String" />
+ 		<constructor-arg value="8446736267" type="long" />
+ 	</bean>
+ </beans>
